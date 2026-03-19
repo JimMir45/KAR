@@ -11,9 +11,14 @@ Thumbs.db
 # Go
 /server/bin/
 /server/tmp/
+/server/server
 *.exe
 *.test
 *.out
+
+# Sensitive configs (use config.example.yaml as template)
+/server/configs/config.yaml
+/server/certs/
 
 # Node
 node_modules/

@@ -1,0 +1,38 @@
+server:
+  port: 8080
+  mode: debug # debug / release
+
+database:
+  host: localhost
+  port: 5432
+  user: kar
+  password: your_password_here
+  dbname: kar
+  sslmode: disable
+  max_idle_conns: 10
+  max_open_conns: 100
+
+jwt:
+  secret: change-me-in-production
+  expire_hours: 168 # 7 days
+
+wechat:
+  client:
+    app_id: "your_client_app_id"
+    app_secret: "your_client_app_secret"
+  admin:
+    app_id: "your_admin_app_id"
+    app_secret: "your_admin_app_secret"
+
+wechat_pay:
+  mch_id: "your_mch_id"
+  mch_api_v3_key: "your_api_v3_key"
+  mch_serial_number: "your_serial_number"
+  mch_private_key_path: "./certs/apiclient_key.pem"
+  notify_url: "https://your-domain.com/api/v1/payments/wechat/notify"
+
+cos:
+  secret_id: "your_secret_id"
+  secret_key: "your_secret_key"
+  bucket: "your-bucket-1234567890"
+  region: "ap-beijing"

@@ -1,0 +1,10 @@
+# Development: use localhost
+# Production: replace with your domain, e.g. api.kar-club.com
+:80 {
+	reverse_proxy app:8080
+}
+
+# Production example (uncomment and replace domain after ICP备案):
+# api.kar-club.com {
+#     reverse_proxy app:8080
+# }
